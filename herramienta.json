@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "tipo": "jardineria ",
+        "nombre": "pala",
+        "stock": 0,
+        "estado": "NO DISPONIBLE",
+        "costo prestamo": "4000"
+    },
+    {
+        "id": 2,
+        "tipo": "construccion",
+        "nombre": "tornillos",
+        "stock": 0,
+        "estado": "DISPONIBLE",
+        "costo prestamo": "4000",
+        "costo": "10000"
+    },
+    {
+        "id": 3,
+        "tipo": "jardineria",
+        "nombre": "tijeras",
+        "stock": 40,
+        "estado": "DISPONIBLE",
+        "costo prestamo": 40000.0
+    },
+    {
+        "id": 4,
+        "tipo": "construccion",
+        "nombre": "gato",
+        "stock": 50,
+        "estado": "DISPONIBLE",
+        "costo prestamo": 40000.0
+    }
+]

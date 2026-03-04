@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "fecha": "2026-02-24",
+        "mensaje": "La cantidad solicitada supera las unidades disponibles!"
+    },
+    {
+        "id": 2,
+        "fecha": "2026-02-24",
+        "mensaje": "La cantidad solicitada supera las unidades disponibles!"
+    },
+    {
+        "id": 3,
+        "fecha": "2026-02-24",
+        "mensaje": "El nombre ya se encuentra registrado!"
+    },
+    {
+        "id": 4,
+        "fecha": "2026-02-24",
+        "mensaje": "El nombre ya se encuentra registrado!"
+    },
+    {
+        "id": 5,
+        "fecha": "2026-02-24",
+        "stock": "stock no encontrado",
+        "mensaje": "La cantidad solicitada supera las unidades disponibles!"
+    },
+    {
+        "id": 6,
+        "fecha": "2026-02-25",
+        "stock": "stock no encontrado",
+        "mensaje": "La cantidad solicitada supera las unidades disponibles!"
+    },
+    {
+        "id": 7,
+        "fecha": "2026-02-25",
+        "mensaje": "El nombre ya se encuentra registrado!"
+    },
+    {
+        "id": 8,
+        "fecha": "2026-02-25",
+        "stock": "stock no encontrado",
+        "mensaje": "La cantidad solicitada supera las unidades disponibles!"
+    },
+    {
+        "id": 9,
+        "fecha": "2026-02-25",
+        "mensaje": "El nombre ya se encuentra registrado!"
+    },
+    {
+        "id": 10,
+        "fecha": "2026-02-25",
+        "mensaje": "El nombre ya se encuentra registrado!"
+    },
+    {
+        "id": 11,
+        "fecha": "2026-02-25",
+        "mensaje": "El nombre ya se encuentra registrado!"
+    }
+]

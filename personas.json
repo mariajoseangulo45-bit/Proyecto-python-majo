@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nombre": "Juan Diego Cardenas",
+        "telefono": 3002020,
+        "direccion": "san francisco apt 1104",
+        "cargo": "usuario",
+        "clave": 921
+    },
+    {
+        "id": 2,
+        "nombre": "Sara Sanchez",
+        "telefono": 3333,
+        "direccion": "fss",
+        "cargo": "usuario",
+        "clave": 12345
+    },
+    {
+        "id": 3,
+        "nombre": "Maria Jose Angulo",
+        "telefono": 3142704388,
+        "direccion": "cra 27 a",
+        "cargo": "usuario",
+        "clave": 246
+    },
+    {
+        "id": 4,
+        "nombre": "sara angulo sanchez",
+        "telefono": 3142704388,
+        "direccion": "cra 22 84 ",
+        "cargo": "usuario ",
+        "clave": 4545
+    },
+    {
+        "id": 5,
+        "nombre": "ana",
+        "telefono": 5,
+        "direccion": "5",
+        "cargo": "5",
+        "clave": 5
+    }
+]
