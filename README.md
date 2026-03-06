@@ -27,3 +27,75 @@ Comunidad requiere que el programa permita:
 - Validaciones  mensajes claros para el usuario.
 - Permanencia de datos por medio de archivos JSON.
 - Historial de errores en stock o fechas registradas.
+
+## 🔥Algunos codigos usados:
+
+### Guardar nuevo usuario 🔐
+
+```
+def guardar_persona():
+    persona=cargar(ARCHIVO)
+
+    nombre=input("Ingrese el nombre completo: ")
+    logs_nombres()
+    while nombre_valido(nombre)==False or existeNombre(nombre)==True:
+        nombre=input('Ingrese el nombre de la persona valida: ')
+        logs_nombres()
+    telefono=validarEntero("Ingrese su numero de telefono: ")
+    direccion=input("Ingrese la direccion: ")
+    cargo=input("Ingrese si es usuario o administrador: ")
+    clave=int(input("Asigne una clave al usuario: "))
+        #crear ususario y admi y guardar 
+    nueva_persona={
+        "id": generar_id(persona),
+        "nombre": nombre,
+        "telefono": telefono,
+        "direccion": direccion,
+        "cargo": cargo,
+        "clave": clave
+    }
+    persona.append(nueva_persona)
+    guardar(ARCHIVO,persona)
+    print("¡PERSONA GUARDADA CORRECTAMENTE!")
+    
+```
+### Logs del stock 🚨
+```
+def logs_stock():
+    logs=cargar(ARCHIVO_LOGS)
+
+    nuevo_logs={
+        "id":generar_id(logs),
+        "fecha":date.today().strftime("%Y-%m-%d"),
+        "stock":"stock no encontrado",
+        "mensaje":"La cantidad solicitada supera las unidades disponibles!"
+    }
+    logs.append(nuevo_logs)
+    guardar(ARCHIVO_LOGS,logs)
+```
+### Eliminacion de prestamos con devolución de stock 🗑️
+```
+def eliminar_prestamo():
+    contador_aux=0
+    prestamos=cargar(ARCHIVO_PRESTAMO)
+    herramientas=cargar(ARCHIVO1)
+    listar_prestamos()
+    id_prestamo=validarEntero("Escoja el id a eliminar: ")
+    while(id_prestamo==None):
+        id_prestamo=validarEntero("ERROR, escoja un id válido a eliminar: ")
+    
+    for elemento in prestamos:
+        if id_prestamo==elemento["id"]:
+            for herramienta in herramientas:
+                if str(herramienta["id"]).strip()==str(elemento["herramienta"]).strip():
+                    herramienta["stock"]+=elemento["cantidad"]
+                    print(f"Nuevo stock es {herramienta['stock']}")
+            prestamos.pop(contador_aux)
+            guardar(ARCHIVO_PRESTAMO, prestamos)
+            guardar(ARCHIVO1,herramientas)
+            print('¡Solicitud eliminada correctamente!')
+            return
+        contador_aux+=1
+    print("El prestamo no existe. \n")
+```
+
