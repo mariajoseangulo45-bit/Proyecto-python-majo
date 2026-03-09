@@ -28,7 +28,25 @@ Comunidad requiere que el programa permita:
 - Permanencia de datos por medio de archivos JSON.
 - Historial de errores en stock o fechas registradas.
 
-## 🔥Algunos codigos usados:
+## 🗃️Estructura del proyecto
+
+```
+gestion_herramientas/
+│
+├── main.py
+├── herramientas.json
+├── usuarios.json
+├── prestamos.json
+├── logs.json
+│
+├── funciones/
+│   ├── herramientas.py
+│   ├── usuarios.py
+│   ├── prestamos.py
+│   └── validaciones.py
+```
+
+## 🔥Algunos códigos usados:
 
 ### Guardar nuevo usuario 🔐
 
@@ -98,4 +116,21 @@ def eliminar_prestamo():
         contador_aux+=1
     print("El prestamo no existe. \n")
 ```
+
+## 🔨Tecnologías utilizadas
+
+- Python 3
+
+- JSON para almacenamiento de datos
+
+- Programación estructurada
+
+- Manejo de archivos
+
+- Validación de entradas de usuario
+
+## 👷Autor 
+
+Proyecto desarrollado por María José Sánchez
+Estudiante de programación.
 
